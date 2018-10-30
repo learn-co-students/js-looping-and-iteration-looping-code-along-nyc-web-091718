@@ -7,7 +7,8 @@ function printBadges(employees) {
 }
 
 function tailsNeverFails() {
-  counter = 0
+  // The next line works without "let", but prob best practice in this type of case to use "let", so as not to create a constant(?).
+  let counter = 0
   while (Math.random() >= 0.5) {
     counter++;
   }
